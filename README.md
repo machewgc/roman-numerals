@@ -29,18 +29,27 @@ You also have to separate ones, tens, hundreds, and thousands. In other words, 9
 
 ## Tests
 
-Number less than 3
-  Example input: 3
-  Example output: III
-Number equal to 4
+number is between 1 and 3
+  Example input: 1
+  Example output: I
+the ones digit is equal to 4
   Example input: 4
   Example output: IV
-Number equal to 5
-  Example input: 5
-  Example output: V
-Number >5 and <9
+the number is between 5 and 8
   Example input: 8
   Example output: VIII
+the ones digit is equal to 9
+  Example input: 9
+  Example output: IX
+the number is greater than or equal to 10
+  Example input: 20
+  Example output: XX
+the tens digit is equal to 4
+  Example input: 40
+  Example output: XL
+the tens digit is equal to 9
+  Example input: 90
+  Example output: XC
 
 ## License
 

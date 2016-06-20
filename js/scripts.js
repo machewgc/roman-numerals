@@ -31,7 +31,7 @@ var lengthDigits = digits.length;
   }
 
   //900 to 999
-  if (digits[lengthDigits - 3] + 1 === 10) {
+  if (digits[lengthDigits - 3] === 9) {
     numeral = numeral + "CM";
     count -= 900;
   }
@@ -43,7 +43,7 @@ var lengthDigits = digits.length;
   }
 
   //400 to 499
-  if((digits[lengthDigits - 3] + 1) === 5) {
+  if((digits[lengthDigits - 3]) === 4) {
     numeral = numeral + "CD"
     count = count - 400;
   }
@@ -58,7 +58,7 @@ var lengthDigits = digits.length;
   }
 
   //90 to 99
-  if (digits[lengthDigits - 2] + 1 === 10) {
+  if (digits[lengthDigits - 2] === 9) {
     numeral = numeral + "XC"
     count -= 90;
   }
@@ -70,7 +70,7 @@ var lengthDigits = digits.length;
   }
 
   //40 to 49
-  if((digits[lengthDigits - 2] + 1) === 5) {
+  if(digits[lengthDigits - 2] === 4) {
     numeral = numeral + "XL"
     count = count - 40;
   }
@@ -85,12 +85,12 @@ var lengthDigits = digits.length;
   }
 
   //last digit
-  if ((digits[lengthDigits-1]) + 1 === 10) {
+  if ((digits[lengthDigits-1]) === 9) {
     numeral = numeral + "IX";
   } else if (count >= 5) {
     ones = count - 5;
     numeral = numeral + "V";
-  } else if ((digits[lengthDigits-1]) + 1 === 5) {
+  } else if ((digits[lengthDigits-1]) === 4) {
     numeral = numeral + "IV"
   } else {
     ones = count;
